@@ -1,0 +1,29 @@
+{
+  "name": "fso-palautukset-osa3",
+  "version": "3.21.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\"",
+    "build:ui": "rm -rf ../frontend/dist && cd ../frontend/ && npm run build && mv dist ../backend",
+    "lint": "eslint ."
+  },
+  "author": "Anders Olsson",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "eslint": "^9.8.0",
+    "globals": "^15.8.0",
+    "nodemon": "^3.1.4"
+  }
+}
