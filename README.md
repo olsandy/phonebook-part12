@@ -1,5 +1,7 @@
 # Part 12 - Phonebook in Docker
 
+Exercises 12.21 and 12.22. The rest of part 12 is [here](https://github.com/olsandy/part12-containers-applications)
+
 ## Installation
 
 The app uses [Mongo DB Atlas](https://www.mongodb.com/atlas/database) as the database for the backend. Register to the service and create a file `backend/.env` to with content (replacing the username, password, connection string and database names)
