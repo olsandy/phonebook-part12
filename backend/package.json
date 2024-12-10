@@ -6,7 +6,6 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\"",
-    "build:ui": "rm -rf ../frontend/dist && cd ../frontend/ && npm run build && mv dist ../backend",
     "lint": "eslint ."
   },
   "author": "Anders Olsson",

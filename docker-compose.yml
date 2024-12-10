@@ -1,0 +1,25 @@
+services:
+  app:
+    image: phone-front-prod
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - VITE_BACKEND_URL=http://localhost:8080/backend
+
+  server:
+    image: phone-backend-prod
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:81
+    container_name: reverse-proxy
+    depends_on:
+      - app
+      - server

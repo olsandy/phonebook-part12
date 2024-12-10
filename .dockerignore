@@ -3,3 +3,5 @@
 node_modules
 Dockerfile
 dev.Dockerfile
+docker-compose
+docker-compose.dev
